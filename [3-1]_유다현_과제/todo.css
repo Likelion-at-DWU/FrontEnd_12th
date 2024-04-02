@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(255, 224, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.TDLtitle {
+    text-align: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
