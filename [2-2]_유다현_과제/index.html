@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+
+    <link rel="stylesheet" href="./todo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600&family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h2 class="TDLtitle">To Do List</h2>
+        <hr>
+        <div>
+            <input type="date" id="todo-date">
+            <select id="todo-kind">
+                <option value="공부">공부</option>
+                <option value="업무">업무</option>
+                <option value="식사">식사</option>
+                <option value="운동">운동</option>
+                <option value="약속">약속</option>
+                <option value="기타">기타</option>
+            </select>
+            <div id="todo-form">
+                <input type="text" id="item" placeholder="나만의 투두리스트를 입력하세요." required size="27">
+                <button id="addButton" type="button" onclick="paintToDo()">+</button>
+            </div>
+            <hr>
+            <ul id="todo-list" class="listul" style="list-style-type: none">
+        </div>
+
+        <script src="./todo.js"></script>
+
+</body>
+
+</html>
