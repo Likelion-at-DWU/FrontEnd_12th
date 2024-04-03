@@ -1,0 +1,46 @@
+*{
+    border-radius: 10px;
+    border-color: rgb(255, 199, 199);
+}
+
+body {
+    background-color: rgb(255, 224, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.TDLtitle {
+    text-align: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.listul {
+    margin: 0px 0px 10px -35px;
+}
+
+.close {
+    cursor: pointer; 
+}
+
+.close:hover{
+    color: rgb(242, 18, 93);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.checkbox {
+    cursor: pointer; 
+}
+
+
+
+
+
