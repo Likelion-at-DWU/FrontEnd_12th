@@ -46,6 +46,9 @@ function paintToDo() {
         toDoInput.value = "";
 
     }
+ 
 }
 
-
+function resetToDo() {
+    toDoList.innerHTML = "";
+}
