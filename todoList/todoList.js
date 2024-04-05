@@ -17,7 +17,7 @@ const getAllTodos = () => {
 
 const appendTodos = (text) => {
     const newId = id++;
-    // 스프레드 연산자 사용할 경우
+    // 스프레드 연산자 사용해서
     const newTodos = [...getAllTodos(), {id: newId, isCompleted: false, content: text }] 
     setTodos(newTodos)
     paintTodos();
