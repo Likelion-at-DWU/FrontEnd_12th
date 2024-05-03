@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투두리스트</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <header><h1 style="color:white">투두리스트</h1></header>
+
+        <section class="sec">
+        <div class="input">
+            <input type="date" id="date" />
+                <input type="text" id="input-box" placeholder='할 일을 입력하세요'autofocus/>
+                <button type="button" id="plus" onClick="addItem()">+</button>
+        </div>
+
+        <ul id="list"> 
+
+        </ul>
+
+        <div class="footer">
+            <button type="button" id="reset">초기화</button>
+        </div>
+    </section>
+    </div>
+    <script src="./node.js"> </script>
+    
+</body>
+</html>
