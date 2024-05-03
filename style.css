@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 510px; 
+}
+
+.container{
+    background-image: linear-gradient(to bottom left, #85edf0, #7db4ec, #bd9df0); 
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+/* h2폰트 */
+h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+.index{
+    display: inline-block;
+    color: rgb(5, 4, 4);
+    font-size:xx-large;
+    position: absolute;
+    top: 6px;
+}
+
+input{
+    border-color: rgba(255, 255, 255, 0.626);
+    border-radius: 10px;
+}
+
+/*input이랑 button부분 위치 조정*/
+.main{
+    background-color: rgb(240, 248, 255);
+    border-radius: 11px;
+    height: 70%;
+    width: 200px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*main 박스 뒤로 보내기*/
+.main { 
+    z-index: 0; 
+}
+
+/*input으로 들어오는 리스트 앞으로 보내기*/
+.libox {
+    z-index: 1; 
+}
+
+/* input박스 클릭했을 때 색깔 바꾸기 error
+input:focus {
+    border-color: white;
+}
+*/
+
+ul{
+    padding-right: 2px;
+    padding-left: 5px;
+}
+
+li{
+    font-size: 12px;
+    font-weight: bolder;
+    list-style-type: none;
+    padding: 2px; /*할일 리스트 사이 간격*/
+    margin-bottom: 5px; /*추가된 리스트끼리 사이 간격*/
+}
+
+/* + 버튼 */
+#addbutton{
+    border-radius: 6px;
+    border-color: #ffffffb9;
+    background-color: #ffffffb9;
+    color: black;
+}
+
+/*X 버튼 */
+.deletebtn{
+    background-color: rgba(255, 250, 250, 0);
+    border-color: rgba(255, 250, 250, 0);
+    float: right;
+    top: 1px;
+}
+
+/* reset 버튼 */
+#resetbutton{
+    background-color: #ffffff00;
+    color: #e11f1f;
+    border-radius: 6px;
+    border-color: #ffffff00;
+    color: #e11f1f;
+
+}
+
+
+
