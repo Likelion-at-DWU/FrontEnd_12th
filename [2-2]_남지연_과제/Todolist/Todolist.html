@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>To do list</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+            <h1 style = "color:black">To do list</h1>
+            <div id="input">
+                <input type="text" id="TodoInput" placeholder="ADD" onkeydown="keyCodeCheck()">
+                <button type="button" id="addButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul id="todoList">
+
+            </ul>
+            <div class="deleteBtn">
+                <button onclick="deleteAll();">모두 삭제</button>
+            </div>
+        </div>
+    </div>
+    <script  type="text/javascript" src="script.js"></script>
+</body>
+</html>
