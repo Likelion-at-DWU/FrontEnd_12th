@@ -9,3 +9,5 @@
 
 📌 같이 사용하는 Repository 이므로 main으로 Pull Request는 하지 않으셔도 됩니다.
 (자신의 브랜치로 push 만 해주세요.)
+
+qusrud
