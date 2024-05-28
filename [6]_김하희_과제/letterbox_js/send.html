@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>send</title>
+    <script>
+      function goToHomePage() {
+        window.location.href = "home.html"; // 이동할 페이지의 경로 설정
+      }
+      function send() {
+        var titleInput = document.querySelector(".wpahr");
+        var title = titleInput.value;
+        console.log("제목:", title);
+        var contentInput = document.querySelector(".sodyd");
+        var content = contentInput.value;
+        console.log("내용:", content);
+      }
+    </script>
+
+    <link rel="stylesheet" href="send.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="backbtn" onclick="goToHomePage()">
+        <img src="backBtn.svg" />
+      </button>
+      <a2 class="smallcontainer">
+        <p class="title">
+          편지 제목:
+          <input type="text" class="wpahr" />
+        </p>
+      </a2>
+      <a3 class="contentbox">
+        <p class="content">
+          <input type="text" class="sodyd" placeholder="내용 입력 ✏️" />
+        </p>
+      </a3>
+      <button class="sendbtn" onclick="send()">전송하기</button>
+    </div>
+  </body>
+</html>

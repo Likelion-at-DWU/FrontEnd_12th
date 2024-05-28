@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>detail</title>
+    <script src="detail.js"></script>
+    <script>
+      function goToHomePage() {
+        window.location.href = "home.html"; // 이동할 페이지의 경로 설정
+      }
+    </script>
+
+    <link rel="stylesheet" href="./detail.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <button class="backbtn" onclick="goToHomePage()">
+        <img src="backBtn.svg" />
+      </button>
+      <h2 class="title" id="title">첫 편지</h2>
+      <h3 class="contentbox" id="content">안뇽안뇽</h3>
+      <h4 class="deletebtn">삭제하기</h4>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <script>
+        function goToSendPage() {
+          window.location.href = "send.html"; // 이동할 페이지의 경로 설정
+        }
+        function goToDetailPage() {
+          window.location.href="detail.html";
+        }
+    </script>
+
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="line">
+        <a1 class="logo">
+          <img src="logo.svg" alt="logo" width="70px" />
+        </a1>
+        <a2 class="title">
+          🦁DWU x LIKELION🦁
+          <br />
+          LETTER
+        </a2>
+        <button class="letterwrapper" id="wrapper" onclick="goToDetailPage()"> </button>
+        <div class="postbox">
+          <a4 class="postText">POST</a4>
+          <hr />
+          <button class="sendbtn" onclick="goToSendPage()">
+            <p1 class="heart">❤️</p1>
+            <p2 class="goText">편지 보내러 가기</p2>
+          </button>
+        </a4>
+      </h1>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>
