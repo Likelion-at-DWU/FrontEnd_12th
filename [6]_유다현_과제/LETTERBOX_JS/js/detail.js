@@ -17,11 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   console.log("postId:", postId);
 
-  if (isNaN(postId)) {
-    console.error("postId가 유효하지 않습니다.");
-    return;
-  }
-
   var letter = data.find(function (item) {
     return item.postId === postId;
   });
@@ -31,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (letter) {
     document.getElementById("title").textContent = letter.title;
     document.getElementById("contentBox").textContent = letter.content;
-  } else {
-    console.error("해당 postId에 대한 데이터를 찾을 수 없습니다.");
   }
 
   var backBtn = document.getElementById("backBtn");
