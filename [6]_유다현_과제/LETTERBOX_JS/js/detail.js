@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { postId: 8, title: "아 배고파", content: "붕어빵계란빵국화빵" },
     { postId: 9, title: "슈퍼이끌림💌", content: "유유유유" },
     { postId: 10, title: "네잎클로버🍀", content: "행운을 보냅니다" },
-  ];
+  ]; 
 
   var params = new URLSearchParams(window.location.search);
   var postId = parseInt(params.get("postId"), 10);
