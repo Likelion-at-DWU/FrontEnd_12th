@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Page</title>
+    <link rel="stylesheet" href="../css/send.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="back-btn">
+        <button id="backBtn">
+          <img src="../backBtn.svg" alt="back" width="35px" />
+        </button>
+      </div>
+      <div class="title">
+        편지 제목:
+        <input type="text" id="letterTitleInput" />
+      </div>
+      <div class="contentBox">
+        <textarea id="contentInput" placeholder="내용 입력✏️"></textarea>
+      </div>
+      <div class="sendBtn" id="sendBtn">전송하기</div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const backBtn = document.getElementById("backBtn");
+        backBtn.addEventListener("click", function () {
+          window.location.href = "home.html";
+        });
+
+        const sendBtn = document.getElementById("sendBtn");
+        sendBtn.addEventListener("click", function () {
+          const title = document.getElementById("letterTitleInput").value;
+          const content = document.getElementById("contentInput").value;
+          console.log("제목:", title);
+          console.log("내용:", content);
+        });
+      });
+    </script>
+  </body>
+</html>
