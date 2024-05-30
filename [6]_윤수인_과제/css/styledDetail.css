@@ -1,0 +1,47 @@
+div {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+.container {
+  width: 390px;
+  height: 844px;
+  background: #fffef1;
+  padding: 1px;
+}
+
+.backBtn {
+  position: relative;
+  right: 160px;
+  top: 10px;
+  background: none;
+  border: none;
+}
+.title-box {
+  border-bottom: 1px solid black;
+  width: 170px;
+  height: 53px;
+}
+.title-box p {
+  margin-bottom: 0px;
+  position: relative;
+  top: 15px;
+}
+.content {
+  width: 274px;
+  height: 423px;
+  background: #ffebc5;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.deleteBtn {
+  width: 220px;
+  height: 47px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: none;
+  background: #dbf6ff;
+  box-shadow: 1px 2px 3px 0px gray;
+}
