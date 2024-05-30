@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="../css/send.css" />
+    <title>멋사 우체통</title>
+  </head>
+  <body>
+    <div id="root">
+        <div class="outline2">
+            <div class="backbtn" onclick="backhome()">
+                <img src="/images/backBtn.svg" alt="back" width="35px">
+            </div>
+            <div class="head">편지 제목: <input class="inputbox" type="text" id="firstInputId"></input></div>
+            <textarea class="inputcontent" type="text" id="secondInputId" placeholder="내용 입력 ✏️"></textarea>
+            <div class="sendbtn" onclick="restore()">전송하기</div>
+        </div>
+    </div>
+    <script src="../js/send.js"></script>
+  </body>
+</html>
