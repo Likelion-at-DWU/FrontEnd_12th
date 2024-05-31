@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEND</title>
+    <script src="../js/send.js">
+         function send() {
+        var titleInput = document.querySelector(".titleInput");
+        var title = titleInput.value;
+        console.log("제목:", title);
+        var contentInput = document.querySelector(".contentInput");
+        var content = contentInput.value;
+        console.log("내용:", content);
+      }
+    </script>
+    <link rel="stylesheet" href="../css/send.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="backBtn" onclick="location.href='home.html'">
+        <img src="../images/backBtn.svg" />
+      </button>
+      <div class="title" id="s.title"> 편지 제목:
+        <input class="titleInput" type="text" />
+      </div>
+      <div class="contentBox" id="s.contentBox">
+        <input class="contentInput" type="text" placeholder="내용 입력 ✏️" />
+      </div>
+      <button class="sendBtn">전송하기</button>
+    </div>
+    <script src="../js/detail.js"></script>
+  </body>
+</html>
