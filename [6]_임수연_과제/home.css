@@ -1,0 +1,96 @@
+* {
+  text-align: center;
+}
+#home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 390px;
+  height: 98vh;
+  background: #fff2c6;
+}
+
+#p1 {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+
+  font-weight: 600;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #cf4d4d;
+  background: #fff;
+  height: 70px;
+  text-align: center;
+}
+
+#list {
+  list-style-type: none;
+  padding: 0;
+  overflow-y: scroll;
+  width: 250px;
+  height: 40vh;
+  margin: 0 auto;
+  text-align: center;
+}
+#list::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  width: 70px;
+  height: 71px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.PostBox {
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 120px 120px 0px 0px;
+  background: #cf4d4d;
+  justify-content: center;
+  bottom: 0;
+  width: 350px;
+  height: 150px;
+}
+
+#POST {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0%;
+}
+
+hr {
+  width: 150px;
+  height: 5px;
+  background: #000;
+}
+
+#goLetter {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #890505;
+  background: #cf4d4d;
+  color: #fff;
+  cursor: pointer;
+}
+
+#goLetter:hover {
+  border: 1px solid #890505;
+  background: #890505;
+}
