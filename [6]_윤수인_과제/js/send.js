@@ -5,8 +5,13 @@ const sendBtn = document.querySelector(".sendBtn");
 sendBtn.addEventListener("click", () => {
   const title = titleInput.value;
   const content = contentTextarea.value;
+
   console.log("제목:", title);
   console.log("내용:", content);
+
+  localStorage.setItem("title", title);
+  localStorage.setItem("content", content);
+
   location.assign("home.html");
 });
 
