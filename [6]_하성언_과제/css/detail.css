@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 390px;
+  height: 98vh;
+  background: #fffef1;
+}
+.backBtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+  background: #fffef1;
+}
+.title {
+  border-bottom: 1px solid #000;
+  width: 155px;
+  height: 53px;
+  flex-shrink: 0;
+  margin-top: 10vh;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentBox {
+  margin-top: 4vh;
+  width: 300px;
+  height: 50vh;
+  border-radius: 5px;
+  background: #ffebc5;
+  font-family: Inter;
+}
+.deleteBtn {
+  margin-top: 4vh;
+  width: 220.592px;
+  height: 47px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: none;
+  background: #dbf6ff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: Inter;
+  font-size: 24px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
