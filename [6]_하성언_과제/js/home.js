@@ -12,14 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
     { postId: 10, title: "네잎클로버🍀", content: "행운을 보냅니다" },
   ];
 
-  var letterBox = document.getElementById("letterBox");
-  data.forEach((letter) => {
-    var div = document.createElement("div");
-    div.textContent = data.title;
-    div.classList.add("letter-title");
-    div.addEventListener("click", function () {
-      console.log(`Go to detail.html? postId = ${letter.postId}`);
-      letterBox.appendChild(div);
+  function showLetters() {
+    const letterBox = document.getElementById("letterList");
+
+    data.forEach((letter) => {
+      const letterElement = document.createElement("div");
+      letterElement.classList.add("letterBox");
+
+      const titleElement = document.createElement("letterBox");
+      titleElement.textContent = letter.title;
+      titleElement.style.fontSize = "16px";
+      titleElement.style.textAlign = "center";
+
+      letterElement.onclick = function () {
+        window.location.href = `detail.html? postId =${letter.postId}`;
+      };
+
+      letterElement.appendChild(titleElement);
+      letterBox.appendChild(letterElement);
     });
-  });
+  }
+
+  showLetters();
 });

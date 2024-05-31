@@ -34,9 +34,14 @@
 .letterList {
   display: flex;
   justify-content: center;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .letterBox {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 200px;
   height: 95px;
   padding: 20px;
@@ -44,6 +49,7 @@
   border-radius: 5px;
   border: 1px solid #cf4d4d;
   background: #fff;
+  flex: auto;
 }
 .postBox {
   width: 90%;
