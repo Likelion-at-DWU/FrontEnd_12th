@@ -12,19 +12,24 @@ document.addEventListener("DOMContentLoaded", function () {
     { postId: 10, title: "네잎클로버🍀", content: "행운을 보냅니다" },
   ];
 
-  var params = new URLSearchParams(window.location.search);
-  var postId = parseInt(params.get("postId"), 10);
+  function showDetail(postId) {
+    return data.find((post) => post.postId == postId);
+  }
 
-  console.log("postId:", postId);
+  const urlParams = new URLSearchParams(window.location.search);
+  const postId = urlParams.get("postId");
 
-  var letter = data.find(function (item) {
-    return item.postId === postId;
-  });
+  if (postId) {
+    const letterDetails = showDetail(postId);
 
-  console.log("letter:", letter);
-
-  if (letter) {
-    document.getElementsByID("title").textContent = letter.title;
-    document.getElementsByID("contentBox").textContent = letter.content;
+    if (letterDetails) {
+      document.getElementById("title").textContent = letterDetails.title;
+      document.getElementById("contentBox").textContent = letterDetails.content;
+      console.log("postId:", postId);
+    } else {
+      console.log("Post not found");
+    }
+  } else {
+    console.log("postId not found in URL");
   }
 });

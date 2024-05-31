@@ -9,5 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("제목:", title);
     console.log("내용:", content);
+
+    window.location.href = `home.html?`;
   });
 });

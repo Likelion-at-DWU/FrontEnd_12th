@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const titleElement = document.createElement("letterBox");
       titleElement.textContent = letter.title;
-      titleElement.style.fontSize = "16px";
-      titleElement.style.textAlign = "center";
 
       letterElement.onclick = function () {
         window.location.href = `detail.html? postId =${letter.postId}`;
