@@ -67,7 +67,21 @@
     text-align: center;
     padding-left: 10px;
   }
-  
+.button{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 5px;
+  border: 1px solid #cf4d4d;
+  background: #fff;
+  margin-top: 8px;
+  color: #5f5f5f;
+  font-family: Inter;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 10px;  
+}
 
 .post {
   position: absolute;
